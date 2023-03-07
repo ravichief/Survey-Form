@@ -1,0 +1,37 @@
+<!-- Survey form to gather information from the users. This could be feedback, information from
+customers, or data for research purposes. You employ HTML to build the structure of your survey
+form and to create the fields the users have to fill (name, age, gender, details of contact). CSS can
+do the styling. JavaScript is for tasks associated with validation such as e-mail ID and character
+limit. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey Form</h1>
+      <form id="survey-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="contact-details">Contact Details:</label>
+        <textarea id="contact-details" name="contact-details" rows="5" maxlength="200" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

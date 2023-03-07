@@ -1,0 +1,73 @@
+/*Survey form to gather information from the users. This could be feedback, information from
+customers, or data for research purposes. You employ HTML to build the structure of your survey
+form and to create the fields the users have to fill (name, age, gender, details of contact). CSS can
+do the styling. JavaScript is for tasks associated with validation such as e-mail ID and character
+limit.*/
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+body{
+    background-color: rgb(224, 217, 209);
+}
+h1 {
+  text-align: center;
+  color: #15080f;
+  background-color: rgb(168, 184, 194);
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+label {
+  font-size: 20px;
+  color: #080707;
+}
+
+input[type="text"], input[type="email"], textarea {
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+select {
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #64b566;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #b47920;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 5px;
+}
